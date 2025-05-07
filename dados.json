@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "descricao": "Notebook",
+        "valorTotal": 6000,
+        "valorParcela": 500,
+        "parcelas": 12,
+        "parcelasPagas": 5,
+        "dataVencimento": "2023-12-10",
+        "pago": false,
+        "atrasado": false
+    },
+    {
+        "id": 2,
+        "descricao": "Celular",
+        "valorTotal": 2400,
+        "valorParcela": 200,
+        "parcelas": 12,
+        "parcelasPagas": 12,
+        "dataVencimento": "2023-11-15",
+        "pago": true,
+        "atrasado": false
+    },
+    {
+        "id": 3,
+        "descricao": "Aluguel",
+        "valorTotal": 1500,
+        "dataVencimento": "2023-12-05",
+        "pago": false,
+        "atrasado": true
+    },
+    {
+        "id": 4,
+        "descricao": "Supermercado",
+        "valorTotal": 350,
+        "dataVencimento": "2023-12-20",
+        "pago": false,
+        "atrasado": false
+    }
+]

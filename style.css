@@ -1,0 +1,117 @@
+:root {
+    --bg-color: #white;
+    --text-color: #333;
+    --container-bg: white;
+    --conta-bg: #f9f9f9;
+    --progress-bg: #ecf0f1;
+    --primary-color: #3498db;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --container-bg: #1e1e1e;
+    --conta-bg: #2d2d2d;
+    --progress-bg: #3d3d3d;
+    --primary-color: #2980b9;
+    --success-color: #27ae60;
+    --danger-color: #c0392b;
+  }
+  
+  
+
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.theme-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+  }
+
+.container {
+    background-color: var(--container-bg);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conta {
+    background-color: var(--conta-bg);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.conta-titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.conta-valor {
+    color: #2c3e50;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: var(--progress-bg);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    transition: width 0.3s ease;
+}
+
+.conta-unica {
+    border-left-color: var(--success-color);
+}
+
+.conta-unica .progress-bar {
+    background-color: var(--success-color);
+
+}
+
+.conta-atrasada {
+    border-left-color: var(--danger-color);
+}
+
+.conta-atrasada .progress-bar {
+    background-color: var(--danger-color);
+}
+
